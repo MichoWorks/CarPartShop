@@ -4,6 +4,10 @@
 
 ---
 
+![MichoCarParts Screenshot](./assets/screenshot.png)
+
+---
+
 ## 📌 **תוכן עניינים**  
 - [תיאור הפרויקט](#-תיאור-הפרויקט)  
 - [תכונות עיקריות](#-תכונות-עיקריות)  
@@ -98,3 +102,5 @@ MichoCarParts/
 ---
 
 🎯 **אם יש לך שאלות או הצעות לשיפור, אל תהסס לפנות אליי!** 🚀
+```
+
