@@ -1,0 +1,175 @@
+{
+	"products": [
+		{
+			"id": "1",
+			"name": "פילטר שמן Bosch",
+			"price": 90,
+			"description": "פילטר שמן איכותי מבית Bosch לשמירה על מנוע נקי וביצועים גבוהים",
+			"image": "https://m.media-amazon.com/images/I/71bMO-gY8dL._AC_SL1500_.jpg",
+			"category": "חלקי חילוף"
+		},
+		{
+			"id": "2",
+			"name": "רפידות בלם Brembo",
+			"price": 250,
+			"description": "רפידות בלם מבית Brembo המציעות בלימה שקטה ובטיחותית",
+			"image": "https://d3m9l0v76dty0.cloudfront.net/system/photos/9130689/original/e2146a5c280db73a84a65e3194215df0.jpg",
+			"category": "חלקי חילוף"
+		},
+		{
+			"id": "3",
+			"name": "משאבת מים Aisin",
+			"price": 320,
+			"description": "משאבת מים מקורית מבית Aisin לשמירה על מערכת הקירור ברכב",
+			"image": "https://www.justmotor.co.il/images/itempics/WPM-055V.jpg",
+			"category": "חלקי חילוף"
+		},
+		{
+			"id": "4",
+			"name": "שמן מנוע Mobil 1 5W-30",
+			"price": 140,
+			"description": "שמן מנוע סינטטי מלא מבית Mobil 1, מתאים לביצועים גבוהים",
+			"image": "https://www.justmotor.co.il/images/itempics/1314_large.jpg",
+			"category": "שמנים ונוזלים"
+		},
+		{
+			"id": "5",
+			"name": "נוזל קירור Prestone",
+			"price": 55,
+			"description": "נוזל קירור ירוק מבית Prestone להגנה על המנוע בכל תנאי מזג האוויר",
+			"image": "https://www.ferromat.co.il/wp-content/uploads/2018/01/FRO-30402-300x429.png",
+			"category": "שמנים ונוזלים"
+		},
+		{
+			"id": "6",
+			"name": "נוזל בלמים Castrol DOT-4",
+			"price": 45,
+			"description": "נוזל בלמים מבית Castrol, מתאים לכלי רכב מודרניים",
+			"image": "https://www.justmotor.co.il/images/itempics/JI15CC79_22022021090925_large.jpg",
+			"category": "שמנים ונוזלים"
+		},
+		{
+			"id": "7",
+			"name": "כיסוי מושבים Sparco",
+			"price": 280,
+			"description": "כיסוי מושבים מבית Sparco, מעוצב ונוח לכל סוגי הרכבים",
+			"image": "https://m.media-amazon.com/images/I/81vGN9w+o0L._AC_UF894,1000_QL80_.jpg",
+			"category": "אקססוריז"
+		},
+		{
+			"id": "8",
+			"name": "שטיחים לרכב WeatherTech",
+			"price": 180,
+			"description": "שטיחים עמידים מבית WeatherTech, מותאמים אישית לכל דגם רכב",
+			"image": "https://m.media-amazon.com/images/I/71Pt28X6LXL._AC_UF894,1000_QL80_.jpg",
+			"category": "אקססוריז"
+		},
+		{
+			"id": "9",
+			"name": "מחזיק טלפון מגנטי Baseus",
+			"price": 90,
+			"description": "מחזיק טלפון מגנטי מבית Baseus, מושלם לשימוש בטוח ונוח בזמן נהיגה",
+			"image": "https://cdn.cashcow.co.il/images/0917d349-0952-4d77-b85c-c9f2c5fe05b2_500.jpg",
+			"category": "אקססוריז"
+		},
+		{
+			"id": "10",
+			"name": "מצבר Exide 55Ah",
+			"price": 420,
+			"description": "מצבר אמין מבית Exide עם קיבולת 55Ah לשימוש ברוב סוגי הרכבים",
+			"image": "https://www.batteryanytime.com/assets/images/fairdealbattery/battery/229_exide-mreddin55-55ah-battery-min.jpg",
+			"category": "מצברים"
+		},
+		{
+			"id": "11",
+			"name": "מצבר Varta 72Ah",
+			"price": 630,
+			"description": "מצבר מבית Varta עם קיבולת 72Ah לעמידות בתנאי שטח קשים",
+			"image": "https://matsberim.co.il/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-11-at-17.26.29-768x768.jpeg",
+			"category": "מצברים"
+		},
+		{
+			"id": "12",
+			"name": "רמקולים Pioneer TS-G1620F",
+			"price": 320,
+			"description": "רמקולים קדמיים מבית Pioneer עם סאונד איכותי ונקי",
+			"image": "https://www.nice-drive.co.il/images/itempics/881643_03022024180320_large.jpg",
+			"category": "רמקולים ומערכות שמע"
+		},
+		{
+			"id": "13",
+			"name": "סאב-וופר JBL Stage 1210",
+			"price": 850,
+			"description": "סאב-וופר מבית JBL לחוויית שמע עוצמתית ומלאה",
+			"image": "https://dm.kg/image/cache/catalog/akustika/subs/jbl/stage1210/stage1210-750x750.jpg",
+			"category": "רמקולים ומערכות שמע"
+		},
+		{
+			"id": "14",
+			"name": "מגבר Alpine S-A32F",
+			"price": 780,
+			"description": "מגבר 4 ערוצים מבית Alpine להגברת איכות השמע ברכב",
+			"image": "https://b-a-s-s.co.il/wp-content/uploads/2021/03/4-Channel-Power-Amplifier_S-A32F_Top-angle.jpg",
+			"category": "רמקולים ומערכות שמע"
+		}
+	],
+	"orders": [
+		{
+			"id": "1",
+			"customerName": "דוד לוי",
+			"customerEmail": "david@example.com",
+			"customerPhone": "0501234567",
+			"products": [
+				{
+					"productId": 1,
+					"quantity": 2
+				},
+				{
+					"productId": 3,
+					"quantity": 1
+				}
+			],
+			"totalPrice": 440,
+			"orderDate": "2025-02-06",
+			"status": "הושלם"
+		},
+		{
+			"id": "2",
+			"customerName": "רונית כהן",
+			"customerEmail": "ronit@example.com",
+			"customerPhone": "0529876543",
+			"products": [
+				{
+					"productId": 2,
+					"quantity": 1
+				}
+			],
+			"totalPrice": 250,
+			"orderDate": "2025-02-05",
+			"status": "ממתין לאישור"
+		}
+	],
+	"users": [
+		{
+			"id": "1",
+			"username": "micho",
+			"password": "admin123",
+			"email": "admin@michoparts.com",
+			"role": "admin"
+		},
+		{
+			"id": "2",
+			"username": "john_doe",
+			"password": "password123",
+			"email": "john@example.com",
+			"role": "user"
+		},
+		{
+			"id": "3",
+			"username": "jane_smith",
+			"password": "jane456",
+			"email": "jane@example.com",
+			"role": "user"
+		}
+	]
+}

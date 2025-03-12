@@ -1,0 +1,12 @@
+<div class="products-container">
+    <div class="product-card" *ngFor="let product of products">
+      <a [routerLink]="['/products', product.id]" class="product-link">
+        <h3>{{ product.name }}</h3>
+        <img [src]="product.image" alt="{{ product.name }}" />
+        <p>{{ product.description }}</p>
+        <p>מחיר: {{ product.price }} ₪</p>
+      </a>
+      <button class="add-to-cart-btn" (click)="addToCart(product)">הוסף לסל</button>
+    </div>
+  </div>
+  

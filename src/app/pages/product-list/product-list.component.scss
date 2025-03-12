@@ -1,0 +1,115 @@
+.tabs-container {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #121212;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  color: #fff;
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .tab-button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #1a1a1a;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+
+      &.active {
+        background-color: #f77f00;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      &:hover {
+        background-color: #f77f00;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .tab-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      .product-card {
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+        color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        h3 {
+          font-size: 1.2rem;
+          color: #f77f00;
+          margin-bottom: 15px;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: #ccc;
+          margin-bottom: 10px;
+
+          &.price {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #d9534f;
+          }
+        }
+
+        button {
+          background-color: #d9534f;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #c9302c;
+          }
+        }
+      }
+    }
+  }
+}
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,120 @@
+<div class="admin-container">
+  <h1>ניהול מערכת</h1>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button [class.active]="activeTab === 'orders'" (click)="setActiveTab('orders')">ניהול הזמנות</button>
+    <button [class.active]="activeTab === 'users'" (click)="setActiveTab('users')">ניהול משתמשים</button>
+    <button [class.active]="activeTab === 'products'" (click)="setActiveTab('products')">ניהול מוצרים</button>
+  </div>
+
+  <!-- Orders Tab -->
+  <div *ngIf="activeTab === 'orders'" class="tab-content">
+    <h2>הזמנות</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>שם לקוח</th>
+          <th>אימייל</th>
+          <th>תאריך</th>
+          <th>סטטוס</th>
+          <th>מחיר כולל</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>{{ order.id }}</td>
+          <td>{{ order.customerName }}</td>
+          <td>{{ order.customerEmail }}</td>
+          <td>{{ order.orderDate }}</td>
+          <td>{{ order.status }}</td>
+          <td>{{ order.totalPrice }}₪</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Users Tab -->
+  <div *ngIf="activeTab === 'users'" class="tab-content">
+    <h2>משתמשים</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>שם משתמש</th>
+          <th>אימייל</th>
+          <th>תפקיד</th>
+          <th>פעולות</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.role }}</td>
+          <td>
+            <button (click)="startEditing(user, 'user')">ערוך</button>
+            <button (click)="deleteUser(user.id)">מחק</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Products Tab -->
+  <div *ngIf="activeTab === 'products'" class="tab-content">
+    <h2>מוצרים</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>שם מוצר</th>
+          <th>קטגוריה</th>
+          <th>מחיר</th>
+          <th>פעולות</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.category }}</td>
+          <td>{{ product.price }}₪</td>
+          <td>
+            <button (click)="startEditing(product, 'product')">ערוך</button>
+            <button (click)="deleteProduct(product.id)">מחק</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+ <!-- Edit Form -->
+<div *ngIf="editMode && editForm" class="edit-form">
+  <h2>עריכת {{ editingUser ? 'משתמש' : 'מוצר' }}</h2>
+  <form [formGroup]="editForm" (ngSubmit)="saveEdit()">
+    <div *ngIf="editingUser">
+      <label>שם משתמש:</label>
+      <input formControlName="username" type="text" />
+      <label>אימייל:</label>
+      <input formControlName="email" type="email" />
+      <label>תפקיד:</label>
+      <input formControlName="role" type="text" />
+    </div>
+    <div *ngIf="editingProduct">
+      <label>שם:</label>
+      <input formControlName="name" type="text" />
+      <label>מחיר:</label>
+      <input formControlName="price" type="number" />
+      <label>קטגוריה:</label>
+      <input formControlName="category" type="text" />
+      <label>תיאור:</label>
+      <textarea formControlName="description"></textarea>
+    </div>
+    <button type="submit">שמור</button>
+    <button type="button" (click)="cancelEdit()">בטל</button>
+  </form>
+</div>
+</div>

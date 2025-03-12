@@ -1,0 +1,14 @@
+<div class="cart-container">
+  <h2>סל הקניות שלך</h2>
+  <div *ngIf="items.length > 0; else emptyCart">
+    <ul>
+      <li *ngFor="let item of items">
+        {{ item.name }} - ₪{{ item.price }}
+      </li>
+    </ul>
+    <button (click)="clearCart()">נקה את הסל</button>
+  </div>
+  <ng-template #emptyCart>
+    <p>הסל שלך ריק.</p>
+  </ng-template>
+</div>

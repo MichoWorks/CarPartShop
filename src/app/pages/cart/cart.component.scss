@@ -1,0 +1,39 @@
+.cart-container {
+  padding: 20px;
+  color: #fff;
+
+  h2 {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    color: #ff0000;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 10px;
+      margin-bottom: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #b30000;
+    }
+  }
+}

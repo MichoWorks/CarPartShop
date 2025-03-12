@@ -1,0 +1,41 @@
+<div class="product-details-container" *ngIf="product; else noProduct">
+  <h1>{{ product.name }}</h1>
+  <div class="product-card">
+    <img [src]="product.image" alt="{{ product.name }}" />
+    <div class="details">
+      <p class="price">מחיר: {{ product.price }} ₪</p>
+      <p class="category">קטגוריה: {{ product.category }}</p>
+      <p class="description">{{ product.description }}</p>
+    </div>
+    
+    <!-- כפתור הוספה לסל -->
+    <button class="add-to-cart-btn" (click)="addToCart()">הוסף לסל</button>
+
+    <!-- הודעה למשתמש אם זה המוצר הראשון או האחרון -->
+    <p *ngIf="isFirstProduct()" class="alert">🚨 זהו המוצר הראשון ברשימה!</p>
+    <p *ngIf="isLastProduct()" class="alert">🚨 זהו המוצר האחרון ברשימה!</p>
+
+    <!-- כפתורי ניווט -->
+    <div class="nav-buttons">
+      <button 
+        class="back"
+        (click)="goToPreviousProduct()" 
+        [disabled]="isFirstProduct()"
+      >
+        ⇠ חזור
+      </button>
+
+      <button 
+        class="next"
+        (click)="goToNextProduct()"
+        [disabled]="isLastProduct()"
+      >
+        מוצר הבא ⇢
+      </button>
+    </div>
+  </div>
+</div>
+
+<ng-template #noProduct>
+  <p>המוצר לא נמצא.</p>
+</ng-template>

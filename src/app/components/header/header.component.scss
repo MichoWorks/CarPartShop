@@ -1,0 +1,41 @@
+header {
+  background: linear-gradient(90deg, #ff0000, #b30000); /* מעבר צבעים אדום */
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+
+  .logo {
+    width: 150px; /* רוחב הלוגו */
+    height: auto; /* שמירה על פרופורציות */
+    margin-right: 20px; /* רווח בצד ימין */
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+
+  nav ul li {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}

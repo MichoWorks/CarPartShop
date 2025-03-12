@@ -1,0 +1,38 @@
+.home-container {
+  text-align: center;
+  padding: 50px 20px;
+  color: #fff;
+  background-color: #000;
+
+  h1 {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    color: #ff0000;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    transition: transform 0.2s, background-color 0.3s;
+
+    &:hover {
+      background-color: #b30000;
+      transform: scale(1.1);
+    }
+  }
+}

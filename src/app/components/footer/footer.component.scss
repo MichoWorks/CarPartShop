@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* דוחף את ה-footer לתחתית */
+  min-height: 100%; /* מבטיח שה-body יתפוס את כל גובה המסך */
+}
+
+.main-container {
+  flex-grow: 1; /* מאפשר לתוכן הראשי לגדול ולמלא את השטח */
+}
+
+footer {
+  background: #111;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+
+  p {
+    margin: 0;
+  }
+}

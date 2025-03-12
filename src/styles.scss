@@ -1,0 +1,14 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    direction: rtl;
+    margin: 0;
+    background: linear-gradient(120deg, #0d0d0d, #1a1a1a);
+    color: #fff;
+    height: 100%;
+  }
+  
+  
+  
+  .main-container {
+    flex-grow: 1; /* מאפשר לתוכן הראשי להתפרש ולדחוף את ה-Footer */
+  }
