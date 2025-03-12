@@ -4,7 +4,7 @@
 
 ---
 
-![MichoCarParts Screenshot](./assets/screenshot.png)
+![MichoCarParts Screenshot](src/assets/screenshot.png)
 
 ---
 
