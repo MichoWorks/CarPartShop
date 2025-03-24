@@ -3,62 +3,43 @@
   [visible]="popupVisible"
 ></app-notification>
 
-
-
-
-
 <div class="tabs-container">
-  <!-- כותרות הלשוניות --> 
+  <!-- תפריט סינון ומיון -->
+  <div class="sort-container">
+    <label for="sortSelect">מיין לפי:</label>
+    <select id="sortSelect" (change)="sortProducts($event)">
+      <option value="default">ללא מיון</option>
+      <option value="priceAsc">מחיר - מהנמוך לגבוה</option>
+      <option value="priceDesc">מחיר - מהגבוה לנמוך</option>
+      <option value="nameAsc">שם - א' - ת'</option>
+      <option value="nameDesc">שם - ת' - א'</option>
+    </select>
+  </div>
+
+  <!-- כותרות הלשוניות -->
   <div class="tabs">
     <button
       class="tab-button"
-      [class.active]="activeTab === 'חלקי חילוף'"
-      (click)="setActiveTab('חלקי חילוף')"
+      *ngFor="let category of categories"
+      [class.active]="activeTab === category.name"
+      (click)="setActiveTab(category.name)"
     >
-      חלקי חילוף
-    </button>
-    <button
-      class="tab-button"
-      [class.active]="activeTab === 'שמנים ונוזלים'"
-      (click)="setActiveTab('שמנים ונוזלים')"
-    >
-      שמנים ונוזלים
-    </button>
-    <button
-      class="tab-button"
-      [class.active]="activeTab === 'אקססוריז'"
-      (click)="setActiveTab('אקססוריז')"
-    >
-      אקססוריז
-    </button>
-    <button
-      class="tab-button"
-      [class.active]="activeTab === 'מצברים'"
-      (click)="setActiveTab('מצברים')"
-    >
-      מצברים
-    </button>
-    <button
-      class="tab-button"
-      [class.active]="activeTab === 'רמקולים ומערכות שמע'"
-      (click)="setActiveTab('רמקולים ומערכות שמע')"
-    >
-      רמקולים ומערכות שמע
+      {{ category.name }}
     </button>
   </div>
 
   <!-- תוכן הלשוניות -->
-<div class="tab-content" *ngFor="let category of categories">
-  <div *ngIf="activeTab === category.name" class="product-grid">
-    <div class="product-card" *ngFor="let product of category.products">
-      <!-- הקישור לדף המוצר -->
-      <a [routerLink]="['/products', product.id]" class="product-link">
-        <h3>{{ product.name }}</h3>
-        <img [src]="product.image" alt="{{ product.name }}" />
-      </a>
-      <p>{{ product.description }}</p>
-      <p>מחיר: {{ product.price }}₪</p>
-      <button (click)="addToCart(product)">הוסף לסל</button>
+  <div class="tab-content" *ngFor="let category of categories">
+    <div *ngIf="activeTab === category.name" class="product-grid">
+      <div class="product-card" *ngFor="let product of category.sortedProducts">
+        <a [routerLink]="['/products', product.id]" class="product-link">
+          <h3>{{ product.name }}</h3>
+          <img [src]="product.image" alt="{{ product.name }}" />
+        </a>
+        <p>{{ product.description }}</p>
+        <p>מחיר: {{ product.price }}₪</p>
+        <button (click)="addToCart(product)">הוסף לסל</button>
+      </div>
     </div>
   </div>
 </div>

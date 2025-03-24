@@ -7,27 +7,74 @@
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  /* תפריט מיון */
+  .sort-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 15px;
+
+    label {
+      font-size: 1rem;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    select {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+      background-color: #f77f00;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      outline: none;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #e66e00;
+      }
+
+      &:focus {
+        background-color: #ff9900;
+      }
+    }
+  }
+
+  /* סגנון הכפתורים של הקטגוריות */
   .tabs {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 
     .tab-button {
-      padding: 10px 20px;
+      padding: 12px 18px;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       background-color: #1a1a1a;
       color: #fff;
       font-size: 1rem;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
+      font-weight: bold;
 
       &.active {
         background-color: #f77f00;
         color: #fff;
-        font-weight: bold;
       }
 
       &:hover {
@@ -37,11 +84,13 @@
     }
   }
 
+  /* עיצוב הרשת של המוצרים */
   .tab-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    width: 100%;
 
     .product-grid {
       display: flex;
@@ -107,6 +156,7 @@
     }
   }
 }
+
 .product-link {
   text-decoration: none;
   color: inherit;
